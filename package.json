@@ -1,0 +1,19 @@
+{
+  "name": "simple-express-crud",
+  "version": "1.0.0",
+  "description": "Simple CRUD using Node.js &amp; Express.js!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0xbadasya/simple-express-crud.git"
+  },
+  "author": "badasya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/0xbadasya/simple-express-crud/issues"
+  },
+  "homepage": "https://github.com/0xbadasya/simple-express-crud#readme"
+}
