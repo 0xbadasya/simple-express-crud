@@ -23,19 +23,19 @@ app.post('/users', (req, res) => {
     res.status(201).json(user);
 });
 
-// GET ALL (Read)
+// GET ALL 
 app.get('/users', (req, res) => {
     res.json(users);
 });
 
-// GET by ID (Read)
+// GET by ID
 app.get('/users/:id', (req, res) => {
     const user = users.find(u => u.id === parseInt(req.params.id));
     if (!user) return res.status(404).json({ message: 'User not found!' });
     res.json(user);
 });
 
-// PUT (Update)
+// PUT
 app.put('/users/:id', (req, res) => {
     const user = users.find(u => u.id === parseInt(req.params.id));
     if (!user) return res.status(404).json({ message: 'User not found!' });
@@ -47,7 +47,7 @@ app.put('/users/:id', (req, res) => {
     res.json(user);
 });
 
-// DELETE (Delete)
+// DELETE
 app.delete('/users/:id', (req, res) => {
     const userIndex = users.findIndex(u => u.id === parseInt(req.params.id));
     if (userIndex === -1) {
